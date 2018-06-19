@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js">
+  <meta charset="utf-8">
+  <title>SingleBootStrapPage</title>
+  <base href="https://NAkash012.github.io/AngularCharts/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="styles.e23bea22b7f1635f4d55.css"></head>
+<body>
+  <app-root></app-root>
+<script>
+  var myApp = angular.module('myApp', []);
+
+myApp.controller('WidgetsController', function($scope) {});
+myApp.controller('MyCtrl', function($scope, $location) {
+    $scope.isActive = function(route) {
+        return route === $location.path();
+    }
+});
+
+myApp.config(function($routeProvider) {
+    $routeProvider
+    .when('/pie-chart', {templateUrl: './pie-chart.component.html', controller: 'WidgetsController'})
+    .when('/graph-chart', {templateUrl: './graph-chart.component.html', controller: 'WidgetsController'})
+    .when('/bar-diagram', {templateUrl: './diagram-bar.component.html', controller: 'WidgetsController'})
+});
+</script>
+
+<script type="text/javascript" src="runtime.a66f828dca56eeb90e02.js"></script><script type="text/javascript" src="polyfills.e3633a42d1123afc5fc9.js"></script><script type="text/javascript" src="main.e85d2707afea52626dd4.js"></script></body>
+
+</html>
