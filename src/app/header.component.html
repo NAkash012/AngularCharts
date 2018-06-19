@@ -1,0 +1,12 @@
+<mat-toolbar color="primary">Bootstrap Page</mat-toolbar>
+<mat-divider></mat-divider>
+<mat-toolbar>
+<button mat-raiser-button color="red" [matMenuTriggerFor]="menu">Charts<mat-icon>keyboard_arrow_down</mat-icon> </button>
+<mat-menu #menu="matMenu">
+  <ul class="navbar-nav">
+    <a class="nav-link" [routerLink]="['/pie-chart']" routerLinkActive="active"><li class="nav-item" style="list-style: none;" mat-menu-item>Pie Chart</li></a>
+    <a class="nav-link" [routerLink]="['/graph-chart']" routerLinkActive="active"> <li class="nav-item" style="list-style: none;" mat-menu-item>Graph Chart</li></a>
+    <a class="nav-link" [routerLink]="['/bar-diagram']" routerLinkActive="active"><li class="nav-item" style="list-style: none;" mat-menu-item>Bar Diagram</li></a>
+  </ul>
+</mat-menu>
+</mat-toolbar>

@@ -1,0 +1,52 @@
+<mat-card>
+    <label><strong>Chrome</strong></label>
+    <input  (colorPickerSelect)="toAddColorChrome(this)"
+            [(colorPicker)]='this.valueChrome'
+            [value]="valueChrome"
+             #postInputChrome/>
+    <button (click)="toAddColorChrome(postInputChrome)">Select</button><br>
+</mat-card>
+
+<mat-card>
+    <label><strong>Firefox</strong></label>
+    <input (colorPickerSelect)="toAddColorFirefox(this)"
+          [(colorPicker)]='this.valueFirefox'
+          [value]="valueFirefox" #postInputFirefox/>
+    <button><i class="fa fa-circle" aria-hidden="true" (click)="toAddColorFirefox(postInputFirefox)">Select</i></button> <br>
+</mat-card>
+
+<mat-card>
+    <label><strong>Safari</strong></label>
+    <input (colorPickerSelect)="toAddColorSafari(this)"
+          [(colorPicker)]='this.valueSafari'
+          [value]="valueSafari" #postInputSafari />
+    <button (click)="toAddColorSafari(postInputSafari)">Select</button><br>
+</mat-card>
+
+<mat-card>
+    <label><strong>IE</strong></label>
+    <input (colorPickerSelect)="toAddColorIe(this)"
+          [(colorPicker)]='this.valueIe'
+          [value]="valueIe" #postInputIe />
+    <button><i class="fa fa-circle" aria-hidden="true" (click)="toAddColorIe(postInputIe)">Select</i></button><br>
+</mat-card>
+
+<mat-card>
+    <label><strong>Opera</strong></label>
+    <input (colorPickerSelect)="toAddColorOpera(this)"
+          [(colorPicker)]='this.valueOpera'
+          [value]="valueOpera" #postInputOpera/>
+    <button><i class="fa fa-circle" aria-hidden="true" (click)="toAddColorOpera(postInputOpera)">Select</i></button><br>
+</mat-card>
+
+<mat-card>
+    <label><strong>Others</strong></label>
+    <input (colorPickerSelect)="toAddColorOthers(this)"
+          [(colorPicker)]='this.valueOthers'
+          [value]="valueOthers" #postInputOthers/>
+    <button><i class="fa fa-circle" aria-hidden="true" (click)="toAddColorOthers(postInputOthers)">Select</i></button><br>
+</mat-card>
+
+<div [chart]="chart"></div>
+
+

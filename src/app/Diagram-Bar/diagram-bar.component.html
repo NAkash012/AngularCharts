@@ -1,0 +1,13 @@
+<h1>Bar Diagram</h1>
+  <label><strong>Tokyo</strong></label>
+  <input (colorPickerSelect)="toAddColorTokyo(this)"
+        [(colorPicker)]='this.valueTokyo'
+        [value]="valueTokyo" #postInputTokyo/>
+  <button><i class="fa fa-circle" aria-hidden="true" (click)="toAddColorTokyo(postInputTokyo)">Select</i></button><br>
+  <label><strong>New York</strong></label>
+  <input (colorPickerSelect)="toAddColorNewYork(this)"
+        [(colorPicker)]='this.valueNewYork'
+        [value]="valueNewYork" #postInputNewYork/>
+  <button><i class="fa fa-circle" aria-hidden="true" (click)="toAddColorNewYork(postInputNewYork)">Select</i></button><br>
+<div [chart]="chart"></div>
+

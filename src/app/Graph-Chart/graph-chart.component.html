@@ -1,0 +1,14 @@
+<label><strong>Line 1</strong></label>
+<input  (colorPickerSelect)="toAddColorLine1(this)"
+      [(colorPicker)]='this.valueLine1'
+      [value]='valueLine1' #postInputLine1/>
+<button (click)="toAddColorLine1(postInputLine1)">Select</button><br>
+
+
+<label><strong>Line 2</strong></label>
+<input  (colorPickerSelect)="toAddColorLine2(this)"
+      [(colorPicker)]='this.valueLine2'
+      [value]='valueLine2' #postInputLine2/>
+<button (click)="toAddColorLine2(postInputLine2)">Select</button><br>
+
+<div [chart]="chart"></div>
